@@ -5,10 +5,12 @@
     The system is designed using a finite state machine (FSM) approach to ensure reliable transitions between traffic signal states. This project demonstrates key embedded software engineering concepts, including low-level hardware interaction, real-time timing control, and microcontroller-based system design.
 
 ## Operation
-The traffic light system operates when the push button is pressed.
-The LEDs follow this sequence:
-Red → Yellow → Green
-If the push button is released, all LEDs immediately turn OFF.
+1)The microcontroller initializes the system and configures GPIO pins for LED outputs and pushbutton input.
+2)The embedded firmware executes a finite state machine (FSM) to control the traffic signal sequence.
+3)The Red LED activates to indicate stop.
+4)The system transitions to Green LED to allow traffic movement.
+5)The Yellow LED activates briefly as a transition warning.
+6)The sequence repeats continuously to simulate real traffic signal behavior.
 
 ## Hardware Used
 - ESP32 Development Board
