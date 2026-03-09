@@ -7,14 +7,14 @@
 ## Operation
 The traffic light system operates when the push button is pressed.
 The LEDs follow this sequence:
-Red → Green → Yellow
+Red → Yellow → Green
 If the push button is released, all LEDs immediately turn OFF.
 
 ## Hardware Used
 - ESP32 Development Board
 - Red LED
-- Green LED
-- Yellow LED (All traffic Light LED Module)
+- Yellow LED
+- Green LED (All traffic Light LED Module)
 - Push Button Module
 - Jumper wires
 
@@ -38,9 +38,8 @@ The images below show the traffic light sequence running on the ESP32 system,
 demonstrating the Red → Green → Yellow LED transitions when the push button is pressed.
 
 ![Red](https://github.com/user-attachments/assets/28c97ff1-5d27-419e-9de4-49a39338ee0a)
-![Green](https://github.com/user-attachments/assets/2ef2999e-a98a-4f97-876b-49ca4d4edf59)
 ![Yellow](https://github.com/user-attachments/assets/e114fe52-7dc4-457b-a3c6-1e47d99e4e96)
-
+![Green](https://github.com/user-attachments/assets/2ef2999e-a98a-4f97-876b-49ca4d4edf59)
 
 ## 🧠Technical Skills Demonstrated
 - Embedded Systems Programming
