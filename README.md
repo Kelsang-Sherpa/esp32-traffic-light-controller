@@ -1,19 +1,20 @@
 # ESP32 Traffic Light Controller
 
 ## Project Overview    
-    This project implements a simple traffic light control system using an ESP32 microcontroller. Three LEDs (Green, Yellow, Red) simulate a real-world traffic signal sequence controlled by a push button.
+    This project implements a Traffic Light Controller using a microcontroller to simulate real-world traffic signal behavior. The embedded firmware manages the sequential operation of red, yellow, and green LEDs using GPIO control and timing-based logic.
+    The system is designed using a finite state machine (FSM) approach to ensure reliable transitions between traffic signal states. This project demonstrates key embedded software engineering concepts, including low-level hardware interaction, real-time timing control, and microcontroller-based system design.
 
 ## Operation
 The traffic light system operates when the push button is pressed.
 The LEDs follow this sequence:
-Green → Yellow → Red
+Red → Green → Yellow
 If the push button is released, all LEDs immediately turn OFF.
 
 ## Hardware Used
 - ESP32 Development Board
+- Red LED
 - Green LED
-- Yellow LED
-- Red LED (All traffic Light LED Module)
+- Yellow LED (All traffic Light LED Module)
 - Push Button Module
 - Jumper wires
 
@@ -34,15 +35,17 @@ If the push button is released, all LEDs immediately turn OFF.
 
 ## 🚦System Output
 The images below show the traffic light sequence running on the ESP32 system,
-demonstrating the Green → Yellow → Red LED transitions when the push button is pressed.
+demonstrating the Red → Green → Yellow LED transitions when the push button is pressed.
 
-<img width="551" height="521" alt="image" src="https://github.com/user-attachments/assets/bc94285d-c8b0-4f2c-91aa-e24b2aca1a04" />
-<img width="527" height="502" alt="image" src="https://github.com/user-attachments/assets/dc5b7363-c1f1-44f5-90a7-6d3a5c36eaa9" />
-<img width="540" height="720" alt="image" src="https://github.com/user-attachments/assets/008b0783-b0a9-4d90-b62d-0a57dcb6656a" />
+![Red](https://github.com/user-attachments/assets/28c97ff1-5d27-419e-9de4-49a39338ee0a)
+![Green](https://github.com/user-attachments/assets/2ef2999e-a98a-4f97-876b-49ca4d4edf59)
+![Yellow](https://github.com/user-attachments/assets/e114fe52-7dc4-457b-a3c6-1e47d99e4e96)
 
 
 ## 🧠Technical Skills Demonstrated
 - Embedded Systems Programming
-- ESP32 GPIO Control
-- Digital Input and Output
-- Real-time system timing
+- Microcontroller ESP32 GPIO Control
+- Finite State Machine (FSM Implementation)
+- Timing and delay management in firmware
+- Hardware-software integration
+- Debugging Embedded Systems
