@@ -63,15 +63,21 @@ The program uses the `millis()` timer to update each LED independently, demonstr
 | Red LED     | GPIO 17   |
 | Push Button | GPIO 27   |
 
+Each LED is connected to the ESP32 through a **current-limiting resistor**.  
+The pushbutton module is connected to a digital input pin to allow user interaction with the system.
+
 ## Hardware Schematic Diagram
 <img width="537" height="228" alt="image" src="https://github.com/user-attachments/assets/bbe69631-732c-4fe2-bb78-8766be73a865" />
+
+**Note:** The schematic diagram illustrates the circuit using an Arduino Uno for visualization purposes.  
+The actual implementation of this project was performed using an **ESP32**, with LEDs connected to GPIO 17, 18, 19 and the pushbutton connected to GPIO 27.
 
 ## 🔧Hardware Setup (Picture below)
   <img width="526" height="359" alt="image" src="https://github.com/user-attachments/assets/8189246d-cde1-487e-b855-bfc168d5f943" />
 
 ## 🚦System Output
 The images below show the traffic light sequence running on the ESP32 system,
-demonstrating the Red → Green → Yellow LED transitions when the push button is pressed.
+demonstrating the Red → Yellow → Green LED transitions when the push button is pressed.
 
 ![Red](https://github.com/user-attachments/assets/28c97ff1-5d27-419e-9de4-49a39338ee0a)
 ![Yellow](https://github.com/user-attachments/assets/e114fe52-7dc4-457b-a3c6-1e47d99e4e96)
