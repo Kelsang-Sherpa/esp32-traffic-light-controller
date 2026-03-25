@@ -1,8 +1,7 @@
 # ESP32 Traffic Light Controller
 
 ## Project Overview    
-    This project implements a Traffic Light Controller using a microcontroller to simulate real-world traffic signal behavior. The embedded firmware manages the sequential operation of red, yellow, and green LEDs using GPIO control and timing-based logic.
-    The system is designed using a finite state machine (FSM) approach to ensure reliable transitions between traffic signal states. This project demonstrates key embedded software engineering concepts, including low-level hardware interaction, real-time timing control, and microcontroller-based system design.
+    This project implements a Traffic Light Controller using a microcontroller to simulate real-world traffic signal behavior. The embedded firmware manages the sequential operation of red, yellow, and green LEDs using GPIO control and timing-based logic.The system is designed to ensure reliable transitions between traffic signal phases through structured control logic. This project demonstrates key embedded software engineering concepts, including low-level hardware interaction, real-time timing control, and microcontroller-based system design.
 
 ## System Operation
 
@@ -86,7 +85,6 @@ demonstrating the Red → Yellow → Green LED transitions when the push button 
 ## 🧠Technical Skills Demonstrated
 - Embedded Systems Programming
 - Microcontroller ESP32 GPIO Control
-- Finite State Machine (FSM Implementation)
 - Timing and delay management in firmware
 - Hardware-software integration
 - Debugging Embedded Systems
