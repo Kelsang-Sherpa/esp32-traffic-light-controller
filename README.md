@@ -7,15 +7,13 @@
 
 1. The microcontroller initializes the system and configures GPIO pins for LED outputs and pushbutton input.
 
-2. The embedded firmware executes a finite state machine (FSM) to control the traffic signal sequence.
+2. The Red LED activates to indicate stop.
 
-3. The Red LED activates to indicate stop.
+3. The system transitions to the Green LED to allow traffic movement.
 
-4. The system transitions to the Green LED to allow traffic movement.
+4. The Yellow LED activates briefly as a transition warning.
 
-5. The Yellow LED activates briefly as a transition warning.
-
-6. The sequence repeats continuously to simulate real traffic signal behavior.
+5. The sequence repeats continuously to simulate real traffic signal behavior.
 
 ## Embedded Firmware Example
 
